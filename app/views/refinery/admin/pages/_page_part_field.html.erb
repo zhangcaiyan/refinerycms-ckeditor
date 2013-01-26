@@ -5,13 +5,13 @@
 
   <div class="rightbar">
     <ul>
-      <li><%= link_to "Images", "#images_container" %></li>
-      <li><%= link_to "Files", "#files_container" %></li>
+      <li><%= link_to "图片", "#images_container" %></li>
+      <li><%= link_to "文件", "#files_container" %></li>
     </ul>
 
     <div id="files_container">
       <p>
-        <b>Drag and drop these files into the editor:</b>
+        <b>这些文件可以拖放到编辑器中:</b>
       </p>
       <ul>
         <% Refinery::Resource.all.each do |resource| %>
@@ -22,7 +22,7 @@
 
     <div id="images_container">
       <p>
-        <b>Drag and drop these images into the editor:</b>
+        <b>这些图片可以拖放到编辑器中:</b>
       </p>
       <ul>
         <% Refinery::Image.all.each do |image| %>
